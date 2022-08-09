@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Meteo</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 class="temp"></h1>
+            <div class="container_wrapper">
+                <h2 class="city"></h2>
+                <div class="weather-wrapper">
+                    <p class="weather"></p>
+                    <img class="icon" src="assets/cloudy-icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <form>
+                <input type="text" class="text" placeholder="Another Location">
+            </form>
+            <div class="nav-container">
+                <ul class="search">
+                    <li class="paris">Paris</li>
+                    <li class="london">London</li>
+                    <li class="newyork">New York</li>
+                    <li class="montreal">Montreal</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="nav-container">
+                <h2>Weather Details</h2>
+                <ul class="weather-details">
+                    <li>Cloudy <span class="cloudy-details"></span></li>
+                    <li>Humidity <span class="humidity-details"></span></li>
+                    <li>Wind <span class="wind-details"></span></li>
+                    <li>Pressure <span class="pressure-details"></span></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

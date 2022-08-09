@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Biotif-Book';
+    src: url(../assets/Biotif-Book.ttf);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Biotif-Book';
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 150px 200px;
+}
+
+.background-image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+}
+
+.container h1 {
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.container_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.container p {
+    font-size: 18px;
+}
+
+.weather-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.weather-wrapper img {
+   height: 24px;
+}
+
+body.rainy {
+    background: url(../assets/rainy.jpg) no-repeat;
+    background-size: cover;
+}
+
+body.cloudy {
+    background: url(../assets/cloudy.jpg) no-repeat;
+    background-size: cover;
+}
+
+body.sunny {
+    background: url(../assets/sunny.jpg) no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 100vh;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 100px 60px;
+}
+
+nav input {
+    background: none;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, .8);
+    font-size: 17px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+nav hr {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    border: none;
+    margin: 50px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px 0;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+}
+
+nav h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+ul.search li:hover {
+    color: #fff;
+}
+
+ul.weather-details {
+    pointer-events: none;
+}
+
+ul.weather-details li {
+    display: flex;
+    justify-content: space-between;    
+}
+
+ul li span {
+    color: white;
+}
